@@ -1,0 +1,14 @@
+<div class="panel panel-default devise-bs">
+  <center>
+    <div class="panel-body">
+      <%= form_for(@newPost) do |f| %>
+        <div class="form-group">
+          <%= f.label :content %>
+          <%= f.text_field :content, autofocus: true, class: 'form-control' %>
+        </div>
+        <%= f.submit t('.update', default: 'Add Post'), class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </center>
+</div>
+
